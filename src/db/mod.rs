@@ -1,4 +1,6 @@
 mod connection;
+mod truck;
+mod load;
 
 
 pub use connection::DB_CONN;
