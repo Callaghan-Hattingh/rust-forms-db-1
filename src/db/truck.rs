@@ -22,7 +22,7 @@ impl TruckDB<'_> {
 
     pub fn create_truck_db_table(&self) -> rusqlite::Result<()> {
         self.conn.execute(
-            "create table if not exists load (
+            "create table if not exists truck (
                 id integer primary key,
                 mass float not null,
                 length float not null,
