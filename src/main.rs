@@ -4,5 +4,5 @@ mod db;
 
 fn main() {
     println!("Hello, world!");
-    setup_db()
+    setup_db();
 }

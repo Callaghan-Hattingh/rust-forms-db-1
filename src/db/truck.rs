@@ -28,7 +28,7 @@ impl TruckDB<'_> {
                 length float not null,
                 capicity float not null,
                 width float not null,
-                wheels integer not null,
+                wheels integer not null
                 )",
                 (),
         )?;

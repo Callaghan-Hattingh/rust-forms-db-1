@@ -13,10 +13,12 @@ lazy_static! {
 
 pub fn create_db_tables() -> rusqlite::Result<()> {
     let conn = DB_CONN.lock().unwrap();
+    
     let load_db = LoadDB::new(&conn);
     let _ = load_db.create_load_db_table();
+
     let truck_db = TruckDB::new(&conn);
     let _ = truck_db.create_truck_db_table();
-    
+
     Ok(())
 }
